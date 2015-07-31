@@ -1,0 +1,114 @@
+
+a {
+text-decoration:none !important;
+color: black;
+}
+
+a:-webkit-any-link:hover {
+	text-decoration: underline !important;
+}
+
+html {
+	background-color: black;
+}
+/*------------------HomePageCSS----------------------*/
+body	{
+	background-color: #000;
+	/*padding: 4%;*/
+	color: black;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+p.footer {
+	font-family: futura;
+}
+
+a.index {
+	text-decoration: none;
+}
+
+a.index:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+h1.home {
+	color: white;
+  margin-left: 4%;
+  padding: 1%;
+	text-decoration: none;
+	float: right;
+}
+
+.header {
+	margin-top: 5em;
+	margin-left: 5%;
+}
+
+header {
+	color: white;
+	padding-right: 200px;
+	line-height: 110px;
+}
+
+header a {
+	color: white;
+}
+
+a.index:hover {
+  curser: pointer;
+}
+
+
+
+/*h1 a.home {
+	color: white;
+	text-decoration: none;
+	margin-top: 5em;
+}*/
+
+/*a.home:hover {
+	color: #0CC5DA;
+	text-decoration: none;
+}*/
+
+p.home {
+  margin: 0 auto;
+  width: 960px;
+  margin-top: 1%;
+  text-align: center;
+	font-size: 1.1em;
+}
+
+.container
+{
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.container span
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: absolute;
+}
+
+.container ul, .container li
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.container li
+{
+	display: none;
+}
+
+.container li.active
+{
+	display: inline;
+}

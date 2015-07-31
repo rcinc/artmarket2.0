@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<div class="gallery">
+
+
+<p><u>Art For Sale</u></p>
+  <br></br>
+
+
+
+
+
+
+
+
+  <p>
+    <% @products.each do |product| %>
+
+        <p class="gallery"><%= image_tag product.image_url %></p>
+        <p><strong>Title</strong></p>
+        <p><%= product.title %></p>
+        <p><strong>Price</strong></p>
+        <p>$<%= product.price %></p>
+        <%= link_to 'Add to cart', shopping_carts_path %>
+        <p><strong>Artist</strong></p>
+        <p><%= link_to product.artist.name, artist_path(product.artist) %></p>
+        <p><strong>Description</strong></p>
+        <p><%= truncate(product.description, length: 35) %></p>
+        <p><%= link_to 'Show More', product %></p>
+        <br></br>
+        <br></br>
+        <br></br>
+
+
+
+
+    <% end %>
+  </p>
+
+</div>
+<br>
+
+<%= link_to 'New Product', new_product_path %>

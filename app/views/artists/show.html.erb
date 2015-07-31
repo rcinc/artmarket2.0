@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong></strong>
+  <%= image_tag @artist.url %>
+</p>
+<p>
+  <strong>Artist ID:</strong>
+  <%= @artist.id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @artist.name %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @artist.about %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @artist.contact %>
+</p>
+<p>
+  <br>
+<strong>Current products for sale</strong>
+<br></br>
+<%   @product.each do |x| %>
+<%  if x.artist_id == @artist.id %>
+<%= link_to x.title, product_url %>
+<% else %>
+<% "You have no art on display"%>
+<% end %>
+<% end %>
+<br></br>
+</p>
+<p>
+<%= link_to 'Add new product', new_product_path%>
+
+
+<%= link_to 'Edit', edit_artist_path(@artist) %> |
+<%= link_to 'Back', artists_path %>
+</p>

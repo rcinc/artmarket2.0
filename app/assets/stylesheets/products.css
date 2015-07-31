@@ -1,0 +1,22 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+p {
+  text-align: center;
+}
+
+body {
+}
+
+div.gallery {
+  background: white;
+  padding: 5%;
+  margin: 5%;
+  color: black;
+}
+
+p.gallery img {
+  border: 5px solid gold;
+  box-shadow: 2px 2px 4px 5px rgb(50, 50, 50);
+}

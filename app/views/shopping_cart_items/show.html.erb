@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @shopping_cart_item.owner_id %>
+</p>
+
+<p>
+  <strong>Owner type:</strong>
+  <%= @shopping_cart_item.owner_type %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @shopping_cart_item.quantity %>
+</p>
+
+<p>
+  <strong>Item:</strong>
+  <%= @shopping_cart_item.item_id %>
+</p>
+
+<p>
+  <strong>Item type:</strong>
+  <%= @shopping_cart_item.item_type %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @shopping_cart_item.price %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @shopping_cart_item.created_at %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @shopping_cart_item.updated_at %>
+</p>
+
+<%= link_to 'Edit', edit_shopping_cart_item_path(@shopping_cart_item) %> |
+<%= link_to 'Back', shopping_cart_items_path %>

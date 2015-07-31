@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<div class="artist">
+<p><strong><u>Featured Artists</u></strong></span>
+<br></br>
+
+<table>
+  <thead>
+    <tr>
+
+      <th></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <p>
+    <% @artists.each do |artist| %>
+
+        <p class="artist"><%= image_tag artist.url %><p>
+        <p class="artist"><strong>Name</p></strong>
+        <p><%= artist.name %></p>
+        <p><strong>About</p></strong>
+        <p><%= artist.about %></p>
+        <p><strong>Contact Info</p></strong>
+        <p><%= artist.contact %></p>
+
+        <p><%= link_to 'Show More', artist %>  <%= link_to 'Edit Page', edit_artist_path(artist) %></p>
+
+<br></br>
+<br></br>
+<br></br>
+
+    <% end %>
+  </tbody>
+</p>
+
+</div>
+<br>
+
+<%= link_to 'New Artist', new_artist_path %>

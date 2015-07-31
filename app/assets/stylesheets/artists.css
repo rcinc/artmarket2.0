@@ -1,0 +1,16 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+div.artist {
+  background: white;
+  padding: 5%;
+  margin: 5%;
+  color: black;
+  text-decoration: none;
+}
+
+p.artist img {
+  
+  box-shadow: 2px 2px 4px 5px rgb(50, 50, 50);
+}
