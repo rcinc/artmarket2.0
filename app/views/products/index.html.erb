@@ -23,12 +23,13 @@
         <p><%= product.title %></p>
         <p><strong>Price</strong></p>
         <p>$<%= product.price %></p>
-        <%= link_to 'Add to cart', shopping_carts_path %>
+        <p class="rob"><%= link_to 'Add to cart', shopping_carts_path %></p>
         <p><strong>Artist</strong></p>
         <p><%= link_to product.artist.name, artist_path(product.artist) %></p>
         <p><strong>Description</strong></p>
         <p><%= truncate(product.description, length: 35) %></p>
-        <p><%= link_to 'Show More', product %></p>
+        <p><%= link_to '-Show More-', product %></p>
+        <p><%= link_to '-Delete-', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
         <br></br>
         <br></br>
         <br></br>

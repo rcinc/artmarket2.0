@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   get 'abouts/new'
 
+  get 'shopping_carts' => 'shopping_carts#show'
+
   resources :reviews
   resources :products
   resources :artists
