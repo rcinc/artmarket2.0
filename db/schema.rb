@@ -25,17 +25,6 @@ ActiveRecord::Schema.define(version: 20150731150543) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "cart_items", force: :cascade do |t|
-    t.integer  "owner_id"
-    t.string   "owner_type"
-    t.integer  "quantity"
-    t.integer  "item_id"
-    t.string   "item_type"
-    t.float    "price"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "products", force: :cascade do |t|
     t.text     "title"
     t.text     "description"
@@ -69,9 +58,11 @@ ActiveRecord::Schema.define(version: 20150731150543) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "shopping_carts", force:  :cascade do |t|
+  create_table "shopping_carts", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "products", "artists"
+  add_foreign_key "reviews", "products"
 end
