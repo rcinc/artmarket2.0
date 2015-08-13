@@ -39,7 +39,7 @@ products = Product.create!( [
     description: "I Love This!",
     image_url: "http://www.artic.edu/aic/collections/citi/images/standard/WebLarge/WebImg_000253/185150_3007554.jpg",
     price: 5000000,
-    artist_id: 3
+    artist_id: 2
   }
 ])
 #
